@@ -1,0 +1,16 @@
+* Descripcion del proyecto "Webapp para la gestion de la lectura"
+
+Este proyecto esta dirigido a lectores con las siguientes carecteristicas:
++ Lectores entre 13 y 50 años.
++ Lectores que se sienten comodos con la tecnologia.
++ Lectores que quieren organizar y tener un mejor seguimiento de su lectura.
+
+La problematica que quiero resolver es una que tengo como lector, @UlisesAlexanderAM, esta consiste en que no existe una aplicacion donde pueda hacer un seguimiento de lo que leo, con las funcionalidades que me gustaria y un catologo unificador. Por ejemplo: algunas de mis lecturas las tengo guardadas en goodreads.com pero ahi me es dificil agregar los comics, webcomics/webtoons que sigo, tampoco estan catalogados mangas, novelas ligeras y varios libros independientes.
+
+Otra problematica es como mencione anteriormente, en sitios como goodreads.com no estan catalogados libros de autores y editoriales independientes, con enfasis en los iberoamericanos. Ademas de esto nadie le presta atencion a las revistas y revistas cientificas.
+
+Las problematicas se resolverian por medio de una aplicacion que tenga las funcionalidades requeridas y la activa catalogizacion de los autores y editoriales independientes; comics, webcomics/webtoons, mangas y novelas ligeras.
+
+Ademas se diviria el catalogo en las siguientes categorias: revistas, revistas cientificas, novelas ligeras, mangas, comics, webcomics/webtoons, libros de texto y libros (literatura).
+
+Los retos tecnologicos a los que nos enfrentamos son: la falta de personal para la creacion del proyecto, bajo conocimiento tecnologico de las mejores herramientas para desarrollar el producto.
