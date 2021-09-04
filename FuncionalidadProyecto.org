@@ -5,18 +5,18 @@
 + La app guarda 4 estados de lectura:
   * Quiero leer
   * Leyendo
-  * Leido
+  * Leído
   * Lectura suspendida
 
-+ Debe guardar el avance de la lectura por medio del porcentaje de lectura y/o el numero de paginas leidas del total. En el caso de los webcomics/webtoons el avance se mide por numero de tiras/capitulos leidos.
++ Debe guardar el avance de la lectura por medio del porcentaje de lectura y/o el numero de paginas leídas del total. En el caso de los webcomics/webtoons el avance se mide por numero de tiras/capítulos leídos.
 
 + Debe tener la habilidad de agregar etiquetas.
 
 + Habilidad de buscar por nombre, ISBN(opcional por el momento).
 
-+ Habilidad de filtrar busqueda por etiqueta, autor, editorial o sitio de alojamiento (como es el caso de algunos webcomics/webtoons), año de publicacion y categoria.
++ Habilidad de filtrar búsqueda por etiqueta, autor, editorial o sitio de alojamiento (como es el caso de algunos webcomics/webtoons), año de publicacion y categoria.
 
-+ Los elementos deben estar agrupado en ~8 categorias: Literatura(Libros), libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas cienficas.
++ Los elementos deben estar agrupado en ~8 categorias: Literatura(Libros), libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas y revistas científicas.
 
 + Calificar con estrellas
 
@@ -26,9 +26,15 @@
 
   * Estanteria :: En el modo de estanteria la biblioteca, es decir, los elementos guardados por el usuario; se muestran en diferentes estantes creados por el usuario.
 
++ Se debe tener la posibilidad de generar reportes de lo mas leido. De manera semanal,mensual y anual, ademas los reportes deben ser: general, literatura(libros), libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas y revistas científicas.
+
++ Se debe tener la posibilidad de generar reportes individuales del catalogo. Estos reportes deben tener graficas que muestren cuantas personas han agregado ese elemento, en que estado de lectura lo tienen, los cambios del estado de lectura, semanas, meses y años entre lo mas leído. Todo esto para uso interno, de los autores y las editoriales.
+
++ Se debe tener la posibilidad de general reportes editoriales del catalogo. Estos reportes tienen la misma información que los individuales pero con los elementos de una editorial determinada. Estos reportes son solo para uso interno y de las editoriales.
+
 ** Descripcion campos en la base de datos
 
-El simbolo de * despues de un campo, indica que el dicho campo es obligatorio. El campo *Link a redes sociales* esta en todas las categorias y es opcional. Todas las categorias deben tener los campos necesario para almacenar el avance de la lectua.
+El simbolo de * despues de un campo, indica que el dicho campo es obligatorio. El campo *Link a redes sociales* esta en todas las categorias y es opcional. Todas las categorias deben tener los campos necesario para almacenar el avance de la lectura.
 
 + Revistas
   * Titulo de la revista *
