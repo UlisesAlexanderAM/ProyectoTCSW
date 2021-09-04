@@ -1,4 +1,4 @@
-* Webapp para la gestion de la lectura.
+* Webapp para la gestión de la lectura. Descripción de funcionalidad.
 
 ** Funcionalidades (Requerimientos)
 
