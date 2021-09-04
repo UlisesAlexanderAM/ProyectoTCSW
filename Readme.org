@@ -1,0 +1,3 @@
+* Webapp para la gestion de la lectura
+
+Este repositorio tiene la intencion de guardar todo lo relevante con el proyecto, de una webapp para la gestion de la lectura, para la experiencia educativa "Tecnologias para la construcción de software" de la Licenciatura en Ingeniería de Software de la Universidad Veracruzana, Campus Ixtaczoquitlan.
