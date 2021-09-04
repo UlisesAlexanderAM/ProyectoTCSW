@@ -1,0 +1,139 @@
+* Webapp para la gestion de la lectura.
+
+** Funcionalidades (Requerimientos)
+
++ La app guarda 4 estados de lectura:
+  * Quiero leer
+  * Leyendo
+  * Leido
+  * Lectura suspendida
+
++ Debe guardar el avance de la lectura por medio del porcentaje de lectura y/o el numero de paginas leidas del total. En el caso de los webcomics/webtoons el avance se mide por numero de tiras/capitulos leidos.
+
++ Debe tener la habilidad de agregar etiquetas.
+
++ Habilidad de buscar por nombre, ISBN(opcional por el momento).
+
++ Habilidad de filtrar busqueda por etiqueta, autor, editorial o sitio de alojamiento (como es el caso de algunos webcomics/webtoons), año de publicacion y categoria.
+
++ Los elementos deben estar agrupado en ~8 categorias: Literatura(Libros), libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas cienficas.
+
++ Calificar con estrellas
+
++ 2 Modos de visualizacion de los elementos guardados por el usuario:
+  
+  * Biblioteca :: Se muestran listados todos los elementos guardados por el usuario.
+
+  * Estanteria :: En el modo de estanteria la biblioteca, es decir, los elementos guardados por el usuario; se muestran en diferentes estantes creados por el usuario.
+
+** Descripcion campos en la base de datos
+
+El simbolo de * despues de un campo, indica que el dicho campo es obligatorio. El campo *Link a redes sociales* esta en todas las categorias y es opcional. Todas las categorias deben tener los campos necesario para almacenar el avance de la lectua.
+
++ Revistas
+  * Titulo de la revista *
+  * Subtitulo de la revista
+  * Numero *
+  * ISSN
+  * Editorial*
+  * Imagen de portada *
+  * Numero de paginas (fisico)
+  * Etiquetas
+  * Link a la revista
+
++ Revistas cientificas
+  * Titulo de la revista *
+  * Subtitulo de la revista
+  * Numero *
+  * ISSN *
+  * Editorial *
+  * Imagen de portada *
+  * Numero de paginas (fisico)
+  * Etiquetas
+  * Link a la revista
+
++ Novelas ligeras
+  * Titulo serie *
+  * Titulo japones de la serie *
+  * Titulo alternativo de la serie
+  * Titulo volumen
+  * Titulo japones del volumen
+  * Titulo alternativo del volumen
+  * Numero del volumen *
+  * Autor *
+  * Ilustrador(es) *
+  * Imagen de portada *
+  * Resumen
+  * Editorial *
+  * Genero (etiquetas)
+  * Numero de paginas (fisico)
+  * ISBN
+  * Link a la pagina del volumen en la pagina de la editorial
+  * Links a diversas tiendas
+    
++ Mangas
+  * Titulo serie *
+  * Titulo japones de la serie *
+  * Titulo alternativo de la serie
+  * Numero de tomo/volumen *
+  * Autor *
+  * Artista(s) *
+  * Imagen de portada *
+  * Resumen
+  * Editorial *
+  * Genero (etiquetas)
+  * Numero de paginas (fisico)
+  * ISBN
+  * Link a la pagina del tomo en la pagina de la editorial
+  * Links a diversas tiendas
+  * Links a redes sociales
+
++ Comics
+  * Titulo serie *
+  * Numero del comic *
+  * Autor(es) *
+  * Artista(s) *
+  * Imagen de la portada *
+  * Resumen de la serie
+  * Editorial *
+  * Genero (etiquetas)
+  * Link al comic en la pagina de la editorial
+  * Links a diversas tiendas
+
++ Webcomics/webtoons
+  * Titulo serie *
+  * Autor *
+  * Artista(s)
+  * Imagen de la serie *
+  * Resumen de la serie *
+  * Genero (etiquetas)
+  * Link al primer capitulo/tira de la serie o a una landing page de la serie.
+
++ Libros de texto
+  * Titulo *
+  * Subtitulo
+  * Autor(es) *
+  * Traductor(es)
+  * Editorial *
+  * Edicion *
+  * Año *
+  * País *
+  * Imagen de la portada *
+  * ISBN *
+  * Etiquetas
+  * Link a pagina del libro en el sitio de la editorial
+  * Links a tiendas
+
++ Libros (Literatura)
+  * Titulo saga
+  * Titulo libro *
+  * Autor *
+  * Ilustrador(es)
+  * Traductor(es)
+  * Editorial *
+  * Edicion *
+  * Año *
+  * País *
+  * ISBN
+  * Link a la pagina del libro en el sitio de la editorial
+  * Links a tiendas
