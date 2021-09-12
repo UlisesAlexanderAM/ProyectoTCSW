@@ -2,23 +2,26 @@
 
 ** Funcionalidades (Requerimientos)
 
-+ La app guarda 4 estados de lectura:
++ La aplicación guarda 4 estados de lectura:
   * Quiero leer
   * Leyendo
   * Leído
   * Lectura suspendida
+  * Lecura abandonada.
 
 + Debe guardar el avance de la lectura por medio del porcentaje de lectura y/o el numero de paginas leídas del total. En el caso de los webcomics/webtoons el avance se mide por numero de tiras/capítulos leídos.
 
 + Debe tener la habilidad de agregar etiquetas.
 
-+ Habilidad de buscar por nombre, ISBN(opcional por el momento).
++ Habilidad de buscar elementos por nombre, ISBN(opcional por el momento).
 
 + Habilidad de filtrar búsqueda por etiqueta, autor, editorial o sitio de alojamiento (como es el caso de algunos webcomics/webtoons), año de publicacion y categoria.
 
-+ Los elementos deben estar agrupado en ~8 categorias: Literatura(Libros), libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas y revistas científicas.
++ Los elementos deben estar agrupado en ~8 categorias: Literatura, libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas y revistas científicas.
 
-+ Calificar con estrellas
++ Calificacion de los elementos leidos con estrellas. Si el estado de lectura es Leido o lectura abandonada se habilita esta opcion, en caso contrario la opcion esta deshabilitada y oculta. La calificación promedio y un desglose de las calificaciones del elemento es visible para todos.
+
++ Opcionalmente el lector puede dejar una reseña y/o comentarios sobre el elemento. Las reseñas y/o comentarios pueden ser públicos o visibles para el autor. Esta opcion solo esta habilitada y visible para los elementos con un estado de lectura de leido o lectura abandonada.
 
 + 2 Modos de visualizacion de los elementos guardados por el usuario:
   
@@ -26,15 +29,38 @@
 
   * Estanteria :: En el modo de estanteria la biblioteca, es decir, los elementos guardados por el usuario; se muestran en diferentes estantes creados por el usuario.
 
-+ Se debe tener la posibilidad de generar reportes de lo mas leido. De manera semanal,mensual y anual, ademas los reportes deben ser: general, literatura(libros), libros de texto, novelas ligeras, mangas, comics, webcomics/webtoons, revistas y revistas científicas.
++ Se debe tener la posibilidad de generar reportes de lo mas leído. De manera semanal,mensual y anual. Los reportes deben ser de caracter publico.
 
-+ Se debe tener la posibilidad de generar reportes individuales del catalogo. Estos reportes deben tener graficas que muestren cuantas personas han agregado ese elemento, en que estado de lectura lo tienen, los cambios del estado de lectura, semanas, meses y años entre lo mas leído. Todo esto para uso interno, de los autores y las editoriales.
++ Los reportes de lo mas leido son de las siguientes categorías:
+  * General
+  * Literatura
+  * Libros de texto
+  * Novelas ligeras
+  * Mangas
+  * Comics
+  * Webcomics/Webtoons
+  * Revistas
+  * Revistas cientificas
+
++ Se debe tener la posibilidad de generar reportes individuales del catalogo. Estos reportes deben tener graficas que muestren cuantas personas han agregado ese elemento, en que estado de lectura lo tienen, los cambios del estado de lectura, semanas, meses y años entre lo mas leído; la calificacion promedio y el desglose de las calificaciones. Todo esto para uso interno, de los autores y las editoriales.
 
 + Se debe tener la posibilidad de general reportes editoriales del catalogo. Estos reportes tienen la misma información que los individuales pero con los elementos de una editorial determinada. Estos reportes son solo para uso interno y de las editoriales.
 
-** Descripcion campos en la base de datos
++ Se deben generar reportes por autor estos tienen las mismas funciones que los reportes individuales pero los elementos mostrados son los libros publicados o con participación del autor. Estos reportes son solo para uso interno y de los autores.
 
-El simbolo de * despues de un campo, indica que el dicho campo es obligatorio. El campo *Link a redes sociales* esta en todas las categorias y es opcional. Todas las categorias deben tener los campos necesario para almacenar el avance de la lectura.
++ Existen 3 tipos de usuarios:
+  * Lectores
+  * Autores
+  * Editorial
+  * Administradores de la aplicación.
+
++ Un Autor puede ser lector pero no lo inverso.
+
++ La creación de elementos en las bases de datos relativas a la lectura se debe hace por medio de un formulario con los campos descritos en la siguiente sección.
+
+** Descripción campos de los elementos de lectura.
+
+El símbolo de * después de un campo, indica que el dicho campo es obligatorio. El campo *Link a redes sociales* esta en todas las categorias y es opcional. Todas las categorias deben tener los campos necesario para almacenar el avance de la lectura y tanto la calificacion del lector como la calificacion promedio.
 
 + Revistas
   * Titulo de la revista *
@@ -130,7 +156,7 @@ El simbolo de * despues de un campo, indica que el dicho campo es obligatorio. E
   * Link a pagina del libro en el sitio de la editorial
   * Links a tiendas
 
-+ Libros (Literatura)
++ Literatura
   * Titulo saga
   * Titulo libro *
   * Autor *
