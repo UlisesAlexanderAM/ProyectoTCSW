@@ -1,0 +1,71 @@
+* Lista de activididades
+
+** Diseño
+
+|-------------------------------------------+----------------------------------+-------------+----------------------------|
+| Actividad                                 | Entregables                      | Responsable | Actividad previa necesaria |
+|-------------------------------------------+----------------------------------+-------------+----------------------------|
+| Hacer mockups de las interfaces graficas. | Archivos de los Mockups          | Noe         |                            |
+| Diseño de la base de datos                | Diagrama E-R y Modelo relacional | Gustavo     |                            |
+| Diseño de paquetes                        | Diagramas de paquetes            | Noe         |                            |
+| Diseño de clases                          | Diagramas de clases              | Noe         | Diseño de paquetes         |
+|-------------------------------------------+----------------------------------+-------------+----------------------------|
+
+** Bases de Datos
+
+|---------------------------------------------------------+-------------+-------------+----------------------------|
+| Actividad                                               | Entregables | Responsable | Actividad previa necesaria |
+|---------------------------------------------------------+-------------+-------------+----------------------------|
+| Implementar base de datos para los elementos de lectura | Script SQL  | Gustavo     | Diseño de la base de datos |
+| Implementar base de datos para la gestion de sesion     | Script SQL  | Gustavo     | Diseño de la base de datos |
+|---------------------------------------------------------+-------------+-------------+----------------------------|
+
+** API
+
+|----------------------------------------------+--------------------+-------------+-----------------------------|
+| Actividad                                    | Entregables        | Responsable | Actividad previa necesaria  |
+|----------------------------------------------+--------------------+-------------+-----------------------------|
+| API para los reportes de lo mas leido        | Codigo funcionando |             | Diseño de paquetes y clases |
+| API para la gestion de sesion                | Codigo funcionando |             | Diseño de paquetes y clases |
+| API para el modo de visualizacion biblioteca | Codigo funcionando |             | Diseño de paquetes y clases |
+| API para el modo de visualizacion estantes   | Codigo funcionando |             | Diseño de paquetes y clases |
+|----------------------------------------------+--------------------+-------------+-----------------------------|
+
+** Interfaz Grafica
+
+|-----------------------------------------------------------------------------+---------------------+-------------+----------------------------|
+| Actividad                                                                   | Entregables         | Responsable | Actividad previa necesaria |
+|-----------------------------------------------------------------------------+---------------------+-------------+----------------------------|
+| Interfaz del lector: Biblioteca                                             | Codigo del Frontend |             | Mockups                    |
+| Interfaz del lector: Estantes                                               | Codigo del Frontend |             | Mockups                    |
+| Interfaz del lector:                                                        | Codigo del Frontend |             | Mockups                    |
+| Interfaz del lector:                                                        | Codigo del Frontend |             | Mockups                    |
+| Interfaz del Administrador: Formularios para los CRUD de las bases de datos | Codigo del Frontend |             | Mockups                    |
+| Interfaz del Administrador: Reportes                                        | Codigo del Frontend |             | Mockups                    |
+| Interfaz del Autor: Reportes                                                | Codigo del Frontend |             | Mockups                    |
+| Interfaz de la Editoria: Reportes                                           | Codigo del Frontend |             | Mockups                    |
+|-----------------------------------------------------------------------------+---------------------+-------------+----------------------------|
+
+** Pruebas
+
+|-------------------------------+-------------------------+-------------+------------------------------------|
+| Actividad                     | Entregables             | Responsable | Momento y/o periocidad             |
+|-------------------------------+-------------------------+-------------+------------------------------------|
+| Creacion de pruebas unitarias | PU para cada componente |             | Despues de crear un componente     |
+| Correr pruebas unitarias      | Resultados de la prueba |             | Despues de modificar un componente |
+|                               |                         |             |                                    |
+|                               |                         |             |                                    |
+|                               |                         |             |                                    |
+|-------------------------------+-------------------------+-------------+------------------------------------|
+
+** Despliegue
+
+|----------------------------------------+----------------------------+-------------------+-----------------------------------------------------|
+| Actividad                              | Entregables                | Responsable       | Momento y/o periocidad                              |
+|----------------------------------------+----------------------------+-------------------+-----------------------------------------------------|
+| Subir avances al repositorio           | Commits, pull request      | Ulises (Reviewer) | Al final de cada spring                             |
+| Creacion y habilitacion de la MV       | Maquina Virtual activa     |                   | Antes de que termine el primer spring de desarrollo |
+| Creacion del contenedor Docker         | Docker activo en la MV     |                   | Despues de que la MV este activa                    |
+| Habilitar el servidor web en el Docker | Servidor web activo        |                   | Despues de crear el Docker                          |
+| Ligar repositorio al servidor          | Repositorio en el servidor |                   | Despues de que el servidor web este activo          |
+|----------------------------------------+----------------------------+-------------------+-----------------------------------------------------|
