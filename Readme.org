@@ -6,4 +6,4 @@ El stack tecnológico que pensamos usar es:
 
 + Base de datos :: : PostgreSQL
 + Front-end :: : Boostrap + JS
-+ Back-end :: : [Framework] Python
++ Back-end :: : FastAPI
