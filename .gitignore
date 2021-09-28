@@ -1,0 +1,4 @@
+*.pptx
+*.drawio
+.pdm.toml
+__pypackages__/
