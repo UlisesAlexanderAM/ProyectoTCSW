@@ -7,7 +7,7 @@ license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-fastapi = "^0.68.1"
+fastapi = {extras = ["all"], version = "^0.70.0"}
 SQLAlchemy = "^1.4.25"
 
 [tool.poetry.dev-dependencies]
