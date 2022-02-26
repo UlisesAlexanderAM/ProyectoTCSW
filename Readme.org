@@ -1,6 +1,8 @@
-* Web app para la gestión de la lectura
+* NOTA: Archivare este proyecto ya que no pienso trabajar en el tal como estaba planteado aqui.
 
-Este repositorio tiene la intención de guardar todo lo relevante con el proyecto, de una web-app para la gestión de la lectura, para la experiencia educativa "Tecnologías para la construcción de software" de la Licenciatura en Ingeniería de Software de la Universidad Veracruzana, Campus Ixtaczoquitlán.
+** Web app para la gestión de la lectura
+
+Este repositorio tiene la intención de guardar todo lo relevante con el proyecto, de una web-app para la gestión de la lectura, para la experiencia educativa "**Tecnologías para la construcción de software" de la Licenciatura en Ingeniería de Software de la Universidad Veracruzana, Campus Ixtaczoquitlán.
 
 El stack tecnológico que pensamos usar es:
 
