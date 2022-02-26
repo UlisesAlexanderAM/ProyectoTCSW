@@ -1,4 +1,4 @@
-*NOTA: Archivare este proyecto ya que no pienso trabajar en el tal como estaba planteado aqui.
+* NOTA: Archivare este proyecto ya que no pienso trabajar en el tal como estaba planteado aqui.
 
 ** Web app para la gestión de la lectura
 
